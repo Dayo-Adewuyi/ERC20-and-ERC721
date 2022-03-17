@@ -15,7 +15,7 @@ contract Blocktoken is ERC20, Ownable {
 
     uint256 price = 1000;
 
-    function buytoken(address receiver, uint256 amount) public onlyOwner {
+    function buytoken(address receiver, uint256 amount) public  {
         _mint(receiver, (amount * price));
     }
 }
